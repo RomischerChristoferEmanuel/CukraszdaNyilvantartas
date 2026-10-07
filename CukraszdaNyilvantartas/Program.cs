@@ -37,4 +37,12 @@ for (int i = 0;i <listdb; i++)
 //4.2feladat
 Console.WriteLine($"\nPult teljes készletértéke: {teljes} Ft");
 double atlag = arak/listdb;
-Console.WriteLine($"Sütemények átlagos egységára: {atlag} Ft");
+Console.WriteLine($"Sütemények átlagos egységára: {atlag:F0} Ft");
+
+//4.3feladat
+if (teljes >= 40000)
+{
+    Console.WriteLine("Bőséges kínálat!");
+}
+else if (teljes >= 20000) Console.WriteLine("Átlagos feltöltötség.");
+else Console.WriteLine("Alacsony készlet, utántöltés szükséges!");
